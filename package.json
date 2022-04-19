@@ -1,0 +1,42 @@
+{
+  "name": "headless-select-package",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "repository": "git@github.com:max-sym/headless-select-package.git",
+  "author": "Maksym Chuchmai <mymaksym@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "yarn type-check -- --watch",
+    "build": "./scripts/build.sh --external:react --external:react-dom",
+    "lint": "eslint ."
+  },
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "css-loader": "^6.2.0",
+    "esbuild": "^0.14.36",
+    "eslint": "^7.17.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-local-rules": "^0.1.1",
+    "eslint-plugin-lodash": "^7.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.5.0",
+    "fast-glob": "^3.2.11",
+    "prettier": "^2.0.5",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.5.0",
+    "@popperjs/core": "^2.11.5",
+    "react-popper": "^2.2.5"
+  }
+}
